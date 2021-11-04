@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --bg-color: #252b31;
+  --color: #f6fafb;
+}
+.container {
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #71b280;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+}
+.toastDiv {
+  width: 100%;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.toastAlert {
+  background-color: #71b280;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  transition: bottom 0.5s ease-in-out;
+}
+.close {
+  position: relative;
+  top: 2px;
+  left: 4px;
+}
+.slider{
+    height: 3px;
+    border-radius: 3px;
+    background-color: red;
+    transition: all 0.2s;
+}
